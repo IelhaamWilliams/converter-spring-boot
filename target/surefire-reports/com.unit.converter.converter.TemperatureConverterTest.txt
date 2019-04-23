@@ -1,4 +1,8 @@
 -------------------------------------------------------------------------------
 Test set: com.unit.converter.converter.TemperatureConverterTest
 -------------------------------------------------------------------------------
-Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.034 s - in com.unit.converter.converter.TemperatureConverterTest
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.042 s <<< FAILURE! - in com.unit.converter.converter.TemperatureConverterTest
+testConvert(com.unit.converter.converter.TemperatureConverterTest)  Time elapsed: 0.042 s  <<< FAILURE!
+java.lang.AssertionError: expected:<50.0> but was:<5.0>
+	at com.unit.converter.converter.TemperatureConverterTest.testConvert(TemperatureConverterTest.java:29)
+

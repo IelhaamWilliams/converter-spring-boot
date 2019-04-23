@@ -20,27 +20,26 @@ public class TemperatureConverterTest {
   }
 
   @Test
-  public void testConvertWhenFromUnitIsEqualToUnit() throws Exception{
+  public void testConvertWhenFromUnitIsEqualToToUnit() throws Exception{
+
     Converter converter = new TemperatureConverter(mockUnitOfMeasure);
     Double result = converter.convert(5.0, "FAHRENHEIT", "FAHRENHEIT");
     assertEquals(5.0, result.doubleValue(), 0);
   }
 
   @Test
-  public void testConvertFromMetricToImperial() throws Exception{
+  public void testWhenComvertingFromMetricToImperial() throws Exception{
     when(mockUnitOfMeasure.isUnitMetric("CELSIUS")).thenReturn(true);
     when(mockUnitOfMeasure.isUnitMetric("FAHRENHEIT")).thenReturn(false);
-
     Converter converter = new TemperatureConverter(mockUnitOfMeasure);
     Double result = converter.convert(5.0, "CELSIUS", "FAHRENHEIT");
     assertEquals(41.0, result.doubleValue(), 0);
   }
 
   @Test
-  public void testConvertFromImperialToMetric() throws Exception{
+  public void testWhenComvertingFromImperialToMetric() throws Exception{
     when(mockUnitOfMeasure.isUnitMetric("CELSIUS")).thenReturn(true);
     when(mockUnitOfMeasure.isUnitMetric("FAHRENHEIT")).thenReturn(false);
-
     Converter converter = new TemperatureConverter(mockUnitOfMeasure);
     Double result = converter.convert(5.0, "FAHRENHEIT", "CELSIUS");
     assertEquals(-15.0, result.doubleValue(), 0);

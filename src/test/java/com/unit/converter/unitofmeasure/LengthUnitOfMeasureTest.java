@@ -58,7 +58,7 @@ public class LengthUnitOfMeasureTest {
   }
 
   @Test
-  public void testGetConversionFactorForMetricToMetricConversion() throws Exception {
+  public void testGetConversionFactorForMetricToMetricConversion() throws InvalidUnitOfMeasureException {
     UnitOfMeasure unitOfMeasure = new LengthUnitOfMeasure();
     Double result = unitOfMeasure.getConversionFactor("MM","CM");
 
@@ -66,7 +66,7 @@ public class LengthUnitOfMeasureTest {
   }
 
   @Test
-  public void testGetConversionFactorForMetricToImperialConversion() throws Exception {
+  public void testGetConversionFactorForMetricToImperialConversion() throws InvalidUnitOfMeasureException {
     UnitOfMeasure unitOfMeasure = new LengthUnitOfMeasure();
     Double result = unitOfMeasure.getConversionFactor("M","FT");
 
@@ -74,7 +74,7 @@ public class LengthUnitOfMeasureTest {
   }
 
   @Test
-  public void testGetConversionFactorForImperialToMetricConversion() throws Exception {
+  public void testGetConversionFactorForImperialToMetricConversion() throws InvalidUnitOfMeasureException {
     UnitOfMeasure unitOfMeasure = new LengthUnitOfMeasure();
     Double result = unitOfMeasure.getConversionFactor("YARD","CM");
 
@@ -83,7 +83,7 @@ public class LengthUnitOfMeasureTest {
   }
 
   @Test
-  public void testGetConversionFactorForImperialToImperialConversion() throws Exception {
+  public void testGetConversionFactorForImperialToImperialConversion() throws InvalidUnitOfMeasureException {
     UnitOfMeasure unitOfMeasure = new LengthUnitOfMeasure();
     Double result = unitOfMeasure.getConversionFactor("YARD","FT");
 

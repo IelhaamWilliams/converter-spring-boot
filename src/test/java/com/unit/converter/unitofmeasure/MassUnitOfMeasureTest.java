@@ -58,7 +58,7 @@ public class MassUnitOfMeasureTest {
   }
 
   @Test
-  public void testGetConversionFactorForMetricToMetricConversion() throws Exception {
+  public void testGetConversionFactorForMetricToMetricConversion() throws InvalidUnitOfMeasureException {
     UnitOfMeasure unitOfMeasure = new MassUnitOfMeasure();
     Double result = unitOfMeasure.getConversionFactor("KG","G");
 
@@ -66,7 +66,7 @@ public class MassUnitOfMeasureTest {
   }
 
   @Test
-  public void testGetConversionFactorForMetricToImperialConversion() throws Exception {
+  public void testGetConversionFactorForMetricToImperialConversion() throws InvalidUnitOfMeasureException {
     UnitOfMeasure unitOfMeasure = new MassUnitOfMeasure();
     Double result = unitOfMeasure.getConversionFactor("KG","OZ");
 
@@ -74,7 +74,7 @@ public class MassUnitOfMeasureTest {
   }
 
   @Test
-  public void testGetConversionFactorForImperialToMetricConversion() throws Exception {
+  public void testGetConversionFactorForImperialToMetricConversion() throws InvalidUnitOfMeasureException {
     UnitOfMeasure unitOfMeasure = new MassUnitOfMeasure();
     Double result = unitOfMeasure.getConversionFactor("LB","KG");
 
@@ -83,7 +83,7 @@ public class MassUnitOfMeasureTest {
   }
 
   @Test
-  public void testGetConversionFactorForImperialToImperialConversion() throws Exception {
+  public void testGetConversionFactorForImperialToImperialConversion() throws InvalidUnitOfMeasureException {
     UnitOfMeasure unitOfMeasure = new MassUnitOfMeasure();
     Double result = unitOfMeasure.getConversionFactor("LB","OZ");
 
