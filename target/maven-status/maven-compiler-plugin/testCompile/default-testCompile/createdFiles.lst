@@ -1,0 +1,9 @@
+com\unit\converter\converter\MassConverterTest.class
+com\unit\converter\converter\rest\ConverterRestServiceTest.class
+com\unit\converter\unitofmeasure\MassUnitOfMeasureTest.class
+com\unit\converter\converter\LengthConveterTest.class
+com\unit\converter\ConverterApplicationTests.class
+com\unit\converter\unitofmeasure\TemperatureUnitOfMeasureTest.class
+com\unit\converter\converter\TemperatureConverterTest.class
+com\unit\converter\unitofmeasure\rest\UnitOfMeasureRestServiceTest.class
+com\unit\converter\unitofmeasure\LengthUnitOfMeasureTest.class
