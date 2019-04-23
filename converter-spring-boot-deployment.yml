@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: converter-spring-boot-deployment
+  labels:
+    app: converter-spring-boot
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: converter-spring-boot
+  template:
+    metadata:
+      labels:
+        app: converter-spring-boot
+    spec:
+      containers:
+      - name: converter-spring-boot
+        image: ielhaam/converter-spring-boot
+        ports:
+        - containerPort: 8085
