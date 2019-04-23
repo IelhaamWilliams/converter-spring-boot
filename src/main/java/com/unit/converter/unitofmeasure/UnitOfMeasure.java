@@ -6,7 +6,7 @@ import java.util.Arrays;
 import java.util.List;
 
 /**
- * Unit of Measure Abstract class.
+ * Unit of Measure Interface.
  */
 public abstract class UnitOfMeasure {
 
@@ -34,7 +34,7 @@ public abstract class UnitOfMeasure {
    * @return conversionFactor
    *
    **/
-  public Double getConversionFactor(String fromUnit, String toUnit) throws Exception {
+  public Double getConversionFactor(String fromUnit, String toUnit) throws InvalidUnitOfMeasureException {
     validateUnits(Arrays.asList(fromUnit, toUnit));
     // if the units are the same just return 1.0
     if (fromUnit.equals(toUnit)) {

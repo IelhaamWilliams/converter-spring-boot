@@ -3,7 +3,7 @@ package com.unit.converter.converter;
 import com.unit.converter.unitofmeasure.UnitOfMeasure;
 
 /**
- * Converter Abstract class.
+ * Converter Interface.
  */
 public abstract class Converter {
 

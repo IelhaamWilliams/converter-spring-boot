@@ -37,11 +37,6 @@ public class TemperatureUnitOfMeasure extends UnitOfMeasure
   }
 
   @Override
-  public Double getConversionFactor(String fromUnit, String toUnit)
-          throws Exception {
-    throw new UnsupportedOperationException("Method not supported for Temperature Conversion");
-  }
-    @Override
   protected void setCalculationVariables(String fromUnit, String toUnit)
   {
     isFromUnitMetric = UNIT.valueOf(fromUnit).isMetric;

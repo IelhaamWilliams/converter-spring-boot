@@ -29,6 +29,6 @@ public class TemperatureConverter  extends Converter {
     }
     return (temperatureUnitOfMeasure.isUnitMetric(fromUnit)
                     && !temperatureUnitOfMeasure.isUnitMetric(toUnit))?
-            (value * 9/5) + 32 : (value - 32) * 5/9;
+            (value * 5/9) + 32 : (value - 32) * 5/9;
   }
 }
