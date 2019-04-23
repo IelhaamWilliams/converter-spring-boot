@@ -6,7 +6,7 @@ import java.util.Arrays;
 import java.util.List;
 
 /**
- * Unit of Measure Interface.
+ * Unit of Measure Abstract class.
  */
 public abstract class UnitOfMeasure {
 
